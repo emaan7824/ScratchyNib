@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootsrap 5</title>
+    <!--CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Icons CSS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        .section_padding {
+            padding: 50px 0px;
+        }
+
+        .first {
+            padding: 50px;
+        }
+
+        .card {
+            size: 50px;
+        }
+
+        h2 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding-top: 50px;
+        }
+
+        .body.navbar {
+
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+
+        }
+
+        .navbar-brand {
+            position: absolute;
+
+        }
+
+        .nav a {
+            width: 100px;
+            display: flex;
+            padding: 20px 15px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+        .nav a :hover {
+            background: #c06154;
+            transition: 0.5s;
+            text-transform: uppercase;
+        }
+
+        .nav {
+
+            width: 100%;
+            background: rgb(0, 0, 0);
+            overflow: auto;
+        }
+
+        .navbar .navbar-nav .nav-item a {
+
+            padding: 15px;
+            color: rgb(0, 0, 0);
+        }
+
+        .navbar .navbar-nav .nav-but {
+            padding: 10px;
+
+        }
+
+        /* footer */
+
+        .footer {
+            background: #eee5e6;
+            text-align: center;
+        }
+
+        .footer .share {
+            padding: 1rem 0;
+        }
+
+        .footer .share a {
+            height: 5rem;
+            width: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            color: var(--primary-color);
+            border: .1rem solid var(--primary-color);
+            margin: .3rem;
+            border-radius: 50%;
+        }
+
+        .footer .share a:hover {
+            color: #fff;
+            background: var(--primary-color);
+        }
+
+        .footer .credit {
+            font-size: 2rem;
+            color: var(--black);
+            padding: 1.5rem;
+            font-weight: lighter;
+        }
+
+        .footer .credit span {
+            color: var(--primary-color);
+        }
+    .dropdown-item:hover
+{
+    background-color: black;
+    color : white !important;
+}
+
+        /* end */
+    </style>
+        
+</head>
+
+<body>
+
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="carousel/log.png" alt="logo" style="width: 200px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="scratchy.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="traditional.html">Traditional</a></li>
+                            <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
+                            <li><a class="dropdown-item" href="handletttering.html">Hand Lettering</a></li>
+                            <li><a class="dropdown-item" href="design.html">Design</a></li>
+                            <li><a class="dropdown-item" href="modern.html">Modern</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" href="#about">About Us</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="img/img 1.jpg">
+                </div>
+                <div class="col">
+                    <h2>Traditional Calligraphy</h2>
+                    <p>Traditional calligraphy is a visual art form that involves the creation of decorative, stylized,
+                        and hand-drawn letters. It has a long history and has been practiced in various cultures around
+                        the world. The word "calligraphy" itself is derived from the Greek words "kallos," meaning
+                        beauty, and "graphia," meaning writing. Traditional calligraphy emphasizes the skillful and
+                        artistic execution of lettering, often using pen and ink, brushes, or other writing instruments.
+                    </p>
+                    <p>Key features and aspects of traditional calligraphy include:</p>
+                    <h5><u>Tools:</u></h5>
+                    <p>Calligraphy can be created using a variety of tools, such as pens, brushes, quills, or reed pens.
+                        The choice of tool influences the thickness and style of the strokes.</p>
+                    <h5><u>Ink:</u></h5>
+                    <p>Traditional calligraphy often involves the use of ink, either in black or colored variations. The
+                        ink is applied to the writing instrument and carefully manipulated to create varying line
+                        thickness and expressive strokes.</p>
+                    <h5><u>Styles:</u></h5>
+                    <p> Different cultures and historical periods have developed distinct calligraphic styles. For
+                        example, Western calligraphy includes styles like Italic, Gothic, and Copperplate, while Eastern
+                        calligraphy includes styles like Chinese, Japanese, and Arabic calligraphy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="first">
+
+        <h5><u>Lettering Styles: </u></h5>
+        <p>Calligraphic scripts can range from formal and structured scripts to more free-flowing and expressive styles.
+            Each script has its own set of rules regarding the formation of letters and the spacing between them.</p>
+        <h5><u>Flourishes and Ornaments: </u></h5>
+        <p>Traditional calligraphy often incorporates decorative elements such as flourishes, swirls, and ornamental
+            details. These embellishments enhance the aesthetic appeal of the written text.</p>
+        <h5><u>Paper and Surfaces:</u></h5>
+        <p>The choice of paper or surface is important in calligraphy. Textured papers, parchment, or other specialty
+            surfaces can enhance the visual impact of the calligraphic work.</p>
+        <h5><u>Discipline and Practice: </u></h5>
+        <p>Achieving mastery in traditional calligraphy requires disciplined practice. Practitioners spend considerable
+            time honing their skills to create harmonious and visually appealing letterforms.</p>
+        <h5><u>Cultural Significance:</u></h5>
+        <p>Calligraphy has played a significant role in the cultural and artistic heritage of many societies. It has
+            been used for religious texts, official documents, manuscripts, and artistic expression.</p>
+        <p>Traditional calligraphy continues to be appreciated as a timeless art form, and many contemporary artists and
+            enthusiasts continue to explore and innovate within the rich traditions of calligraphy while adapting it to
+            modern contexts.</p>
+    </div>
+
+    <!-- end -->
+
+    <!-- Section Project -->
+    <section id="project" class="project section_padding">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col">
+                
+                        <img src="img/img 3.jpg " class="card-img-top" alt="...">
+                   
+                </div>
+                <div class="col">
+                
+                        <img src="img/img 5.jpg" class="card-img-top" alt="...">
+                   
+                </div>
+
+                <div class="col">
+                
+                        <img src="img/img 9.jpg" class="card-img-top" alt="...">
+              
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="first">
+
+        <h3> Historical Roots:</h3>
+        <p>Traditional calligraphy has its roots in ancient civilizations, such as Chinese, Greek, Roman, and Islamic
+            cultures, where skilled scribes meticulously crafted manuscripts and inscriptions.
+            Chinese calligraphy, for instance, dates back thousands of years and is revered for its expressive
+            brushwork.</p>
+
+        <h3> Writing Instruments:</h3>
+        <p>Traditional calligraphy employs a range of writing instruments, each contributing to distinct styles. Common
+            tools include:
+            Brushes: Used in Chinese and Japanese calligraphy, brushes vary in size and stiffness.
+            Quills and Dip Pens: Popular in Western calligraphy, providing a wide variety of line thickness.
+            Reed Pens: Historical instruments made from natural materials, used in Middle Eastern and ancient European
+            calligraphy.</p>
+
+        <h3>Styles and Scripts:</h3>
+        <p>Traditional calligraphy encompasses various scripts and styles, each with its unique characteristics. Common
+            scripts include:</p>
+        <h5><u>Italic:</u></h5>
+        <p>A fluid, cursive script with slanted letters, popular in Western calligraphy.</p>
+        <h5><u>Copperplate:</u></h5>
+        <p> An elaborate, ornamental script characterized by thin and thick lines, commonly used in English handwriting.
+        </p>
+        <h5><u>Kufic:</u></h5>
+        <p>An early form of Arabic calligraphy, known for its geometric shapes and angular letters.</p>
+
+        <h3> Artistic Principles:</h3>
+        <p>Traditional calligraphy places emphasis on artistic principles, such as balance, proportion, and rhythm.
+            The spacing between letters and words, known as kerning, is crucial for creating visually appealing
+            compositions.
+            Artists often explore creative variations within established scripts to express individual style.</p>
+
+        <h3> Applications:</h3>
+        <p>Calligraphy is employed in a wide range of applications, including:</p>
+        <h5><u>Invitations and Stationery:</u></h5>
+        <p> Wedding invitations, event announcements, and personalized stationery.</p>
+        <h5> <u> Artistic Pieces:</u></h5>
+        <p>Calligraphers create standalone artworks featuring quotes, poems, or personal messages.</p>
+        <h5><u>Official Documents:</u></h5>
+        <p>Historically, calligraphy was used for official documents, royal decrees, and religious texts.</p>
+
+        <h3> Contemporary Resurgence:</h3>
+        <p>In the digital age, traditional calligraphy has experienced a resurgence as people seek the authenticity and
+            craftsmanship associated with hand-lettered works.
+            Calligraphers often share their work on social media platforms, fostering a global community of enthusiasts
+            and practitioners.</p>
+
+        <h3> Learning Calligraphy:</h3>
+        <p>Many individuals pursue formal training or engage in self-study to master the art of calligraphy.
+            Workshops, online courses, and instructional books provide resources for beginners and experienced
+            practitioners alike. <br> Traditional calligraphy continues to enchant and inspire, blending historical
+            techniques with modern creativity to create timeless works of art. Its enduring appeal lies in its ability
+            to convey both meaning and aesthetic beauty through the skilled manipulation of written language.</p>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="bg-dark pt-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <img src="carousel/log.png" class="img-fluid">
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="fw-bold" style="color: #c07369";>Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="contact.html" class="text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> Site Map
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="gallery.html" class="text-white text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> Gallery
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#aboutus" class="text-white text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> Queries
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="fw-bold mb-3" style="color: #c07369";>Contact Us</h3>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-light">
+                        <span class="fw-light">
+                            Aptech North Nazimabad.
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-light">
+                        <span class="fw-light">
+                            scratchynib@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-light">
+                        <span class="fw-light">
+                            03333564321
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="fw-bold mb-3" style="color: #c07369";>Follow Us</h3>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="https://www.facebook.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://pk.linkedin.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-4 fw-bold" style="color: #c07369";>
+            © 2024 copyright: nibscratchy.com
+        </div>
+        <!-- Copyright -->
+    </footer>
+    </div>
+
+
+    <!-- end -->
+    <!--Icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="script.js"></script>
+
+    <!--Javascript CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5h5.0.3h3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha5h5h5h585h5h5-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp5h5h5YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html

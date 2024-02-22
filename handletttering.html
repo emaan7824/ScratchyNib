@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootsrap 5</title>
+    <!--CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Icons CSS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .section_padding {
+            padding: 50px 0px;
+        }
+
+        .first {
+            padding: 50px;
+        }
+
+        .card {
+            size: 50px;
+        }
+
+        h2 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding-top: 50px;
+        }
+
+
+        .body.navbar {
+
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+
+        }
+
+        .navbar-brand {
+            /* width: 100%;
+    margin-top: 15px;
+    margin-left: 10px; */
+            position: absolute;
+
+        }
+
+        .nav a {
+            width: 100px;
+            display: flex;
+            padding: 20px 15px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+        .nav a :hover {
+            background: #c06154;
+            transition: 0.5s;
+            text-transform: uppercase;
+        }
+
+        .nav {
+
+            width: 100%;
+            background: rgb(0, 0, 0);
+            overflow: auto;
+        }
+
+        .navbar .navbar-nav .nav-item a {
+
+            padding: 15px;
+            color: rgb(0, 0, 0);
+        }
+
+        .navbar .navbar-nav .nav-but {
+            padding: 10px;
+
+        }
+
+        /* footer */
+
+        .footer {
+            background: #eee5e6;
+            text-align: center;
+        }
+
+        .footer .share {
+            padding: 1rem 0;
+        }
+
+        .footer .share a {
+            height: 5rem;
+            width: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            color: var(--primary-color);
+            border: .1rem solid var(--primary-color);
+            margin: .3rem;
+            border-radius: 50%;
+        }
+
+        .footer .share a:hover {
+            color: #fff;
+            background: var(--primary-color);
+        }
+
+        .footer .credit {
+            font-size: 2rem;
+            color: var(--black);
+            padding: 1.5rem;
+            font-weight: lighter;
+        }
+
+        .footer .credit span {
+            color: var(--primary-color);
+        }
+
+        /* end */
+    
+    .dropdown-item:hover
+{
+    background-color: black;
+    color : white !important;
+}
+
+    </style>
+</head>
+
+<body>
+
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="carousel/log.png" alt="logo" style="width: 200px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="scratchy.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="traditional.html">Traditional</a></li>
+                            <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
+                            <li><a class="dropdown-item" href="handletttering.html">Hand Lettering</a></li>
+                            <li><a class="dropdown-item" href="design.html">Design</a></li>
+                            <li><a class="dropdown-item" href="modern.html">Modern</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" href="#about">About Us</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+
+    <section class="home mt-4" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="img/imag 12.jpg">
+                </div>
+                <div class="col">
+                    <h2>Hand Lettering Calligraphy</h2>
+                    <h5>Hand Lettering</h5>
+                    <p>Hand lettering and calligraphy are related art forms that involve creating decorative, stylized
+                        letters or characters by hand. While they share similarities, they also have distinct
+                        characteristics.</p>
+                    <p>Hand lettering is a broad term that encompasses the art of drawing letters by hand. It allows for
+                        more creative freedom and flexibility compared to traditional typography.</p>
+                    <p>Hand lettering can vary widely in style, ranging from casual and whimsical to formal and elegant.
+                        Artists often use various tools such as pens, markers, brushes, and even digital tools to create
+                        their lettering.</p>
+                    <p>Calligraphy can be created using a variety of tools, such as pens, brushes, quills, or reed pens.
+                        The choice of tool influences the thickness and style of the strokes.</p>
+                    <p>It is often used in design projects, signage, logos, and other applications where a custom,
+                        unique lettering style is desired.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="first">
+
+        <h5><u>Calligraphy: </u></h5>
+        <p>Calligraphy is a specific form of hand lettering that focuses on the art of beautiful writing. It often
+            involves using specialized tools like nibs and brushes to create stylized, flowing characters.</p>
+        <p>Calligraphy has a long history and is rooted in various cultural traditions around the world, including
+            Western, Chinese, Japanese, Arabic, and others.</p>
+        <p>Precision and control of the writing instrument are essential in calligraphy to achieve consistent line
+            thickness, graceful curves, and overall harmony in the letters.</p>
+        <h5><u>Key Differences: </u></h5>
+        <h5>Tools and Techniques:</h5>
+        <p> Hand lettering is a broader term and can involve a wide range of tools, including pens, markers, and even
+            digital tools. Calligraphy, on the other hand, typically uses specific tools like nibs and brushes.</p>
+        <h5>Purpose: </h5>
+        <p>Hand lettering is often chosen for its creative and expressive qualities and can be applied in various design
+            contexts. Calligraphy, while also an art form, is often associated with formal writing, invitations,
+            certificates, and other applications where a more refined and traditional appearance is desired.</p>
+        <p>Both hand lettering and calligraphy require practice and a good understanding of letterforms, spacing, and
+            composition. Artists and practitioners often develop their unique style within these art forms, allowing for
+            a diverse range of expressive and visually appealing lettering. Whether for personal projects, professional
+            design work, or artistic expression, both hand lettering and calligraphy offer opportunities for creativity
+            and self-expression.</p>
+    </div>
+
+    <!-- end -->
+
+    <!-- Section Project -->
+    <section id="project" class="project section_padding">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col">
+                    <div class="card">
+                        <img src="img/img 3.jpg " class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/img 5.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="img/img 9.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer class="bg-dark pt-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <img src="carousel/log.png" class="img-fluid">
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="fw-bold" style="color: #c07369";>Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="contact.html" class="text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> Site Map
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="gallery.html" class="text-white text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> Gallery
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#aboutus" class="text-white text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> Queries
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="fw-bold mb-3" style="color: #c07369";>Contact Us</h3>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-light">
+                        <span class="fw-light">
+                            Aptech North Nazimabad.
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-light">
+                        <span class="fw-light">
+                            scratchynib@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-light">
+                        <span class="fw-light">
+                            03333564321
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="fw-bold mb-3" style="color: #c07369";>Follow Us</h3>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="https://www.facebook.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://pk.linkedin.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-4 fw-bold" style="color: #c07369";>
+            © 2024 copyright: nibscratchy.com
+        </div>
+        <!-- Copyright -->
+    </footer>
+    </div>
+
+
+    <!-- end -->
+    <!--Icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="script.js"></script>
+
+    <!--Javascript CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5h5.0.3h3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha5h5h5h585h5h5-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp5h5h5YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html

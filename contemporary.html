@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootsrap 5</title>
+    <!--CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--Icons CSS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <style>
+        .section_padding {
+            padding: 50px 0px;
+        }
+
+        .first {
+            padding: 50px;
+        }
+
+        .card {
+            size: 50px;
+        }
+
+        h2 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding-top: 50px;
+        }
+
+        .body.navbar {
+
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+
+        }
+
+        .navbar-brand {
+            /* width: 100%;
+    margin-top: 15px;
+    margin-left: 10px; */
+            position: absolute;
+
+        }
+
+        .nav a {
+            width: 100px;
+            display: flex;
+            padding: 20px 15px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+        .nav a :hover {
+            background: #c06154;
+            transition: 0.5s;
+            text-transform: uppercase;
+        }
+
+        .nav {
+
+            width: 100%;
+            background: rgb(0, 0, 0);
+            overflow: auto;
+        }
+
+        .navbar .navbar-nav .nav-item a {
+
+            padding: 15px;
+            color: rgb(0, 0, 0);
+        }
+
+        .navbar .navbar-nav .nav-but {
+            padding: 10px;
+
+        }
+
+        /* footer */
+
+        .footer {
+            background: #eee5e6;
+            text-align: center;
+        }
+
+        .footer .share {
+            padding: 1rem 0;
+        }
+
+        .footer .share a {
+            height: 5rem;
+            width: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            color: var(--primary-color);
+            border: .1rem solid var(--primary-color);
+            margin: .3rem;
+            border-radius: 50%;
+        }
+
+        .footer .share a:hover {
+            color: #fff;
+            background: var(--primary-color);
+        }
+
+        .footer .credit {
+            font-size: 2rem;
+            color: var(--black);
+            padding: 1.5rem;
+            font-weight: lighter;
+        }
+
+        .footer .credit span {
+            color: var(--primary-color);
+        }
+
+    .dropdown-item:hover
+{
+    background-color: black;
+    color : white !important;
+}
+
+
+        /* end */
+    </style>
+</head>
+
+<body>
+
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="carousel/log.png" alt="logo" style="width: 200px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="scratchy.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="traditional.html">Traditional</a></li>
+                            <li><a class="dropdown-item" href="contemporary.html">Contemporary</a></li>
+                            <li><a class="dropdown-item" href="handletttering.html">Hand Lettering</a></li>
+                            <li><a class="dropdown-item" href="design.html">Design</a></li>
+                            <li><a class="dropdown-item" href="modern.html">Modern</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" href="#about">About Us</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- banner -->
+
+    <section class="home mt-4" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="img/contem - Copy.jpeg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <h2>Contemporary Calligraphy</h2>
+                    <h5>Contemporary</h5>
+                    <p>Contemporary calligraphy refers to a modern and innovative approach to the traditional art of
+                        calligraphy. Calligraphy, in its essence, is the art of beautiful and expressive writing, often
+                        characterized by well-crafted letterforms and a harmonious composition. While traditional
+                        calligraphy has deep roots in historical scripts and styles, contemporary calligraphy pushes
+                        boundaries, embraces individual creativity, and often incorporates a variety of materials,
+                        techniques, and cultural influences.</p>
+                    <p>Key features of contemporary calligraphy include:</p>
+                    <h5>Diverse Styles and Techniques:</h5>
+                    <p>Contemporary calligraphy encompasses a wide range of styles and techniques that may deviate from
+                        the classical scripts like Copperplate or Spencerian. Calligraphers experiment with various
+                        letterforms, strokes, and compositions to create unique and personal expressions.</p>
+                    <h5>Incorporation of Mixed Media: </h5>
+                    <p>Contemporary calligraphers frequently integrate calligraphy with other art forms like painting,
+                        illustration, or graphic design. This interdisciplinary approach results in visually rich and
+                        dynamic pieces that go beyond the confines of traditional calligraphy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="first">
+        <h5><u>Cultural Fusion:</u></h5>
+        <p>Calligraphers often draw inspiration from various cultural and artistic traditions, resulting in a fusion of
+            styles. This cross-cultural exchange contributes to a more diverse and eclectic field of contemporary
+            calligraphy.</p>
+        <h5> <u>Expressive Typography:</u></h5>
+        <p>In contemporary calligraphy, there is an emphasis on conveying emotions, moods, and personal narratives
+            through the written word. This can involve experimenting with letter spacing, size variations, and gestural
+            strokes to create a more expressive and dynamic feel.</p>
+        <h5><u>Personalization and Individual Style:</u></h5>
+        <p>Unlike strict adherence to established scripts in traditional calligraphy, contemporary calligraphers embrace
+            individuality and personal style. Artists are encouraged to develop their unique approach and signature
+            look.</p>
+        <h5><u>Exploration of Abstract Forms:</u></h5>
+        <p>Some contemporary calligraphers explore abstract and experimental forms, moving away from the
+            legibility-focused nature of traditional calligraphy. This can result in visually intriguing and
+            thought-provoking pieces.</p>
+        <p>Contemporary calligraphy is a vibrant and evolving field that allows artists to break free from traditional
+            constraints, encouraging experimentation, innovation, and the exploration of new possibilities in the realm
+            of beautiful writing.</p>
+    </div>
+
+    <!-- end -->
+
+    <!-- Section Project -->
+     <section id="project" class="project section_padding">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4">
+                  
+                        <img src="img/cont.jpeg " class="card-img-top" height="400px" width="400px">
+                  
+                </div>
+                <div class="col-lg-4">
+                  
+                        <img src="img/cont1.jpeg" class="card-img-top" height="400px" width="400px">
+                   
+                </div>
+
+                <div class="col">
+                  
+                        <img src="img/cont2.jpeg" class="card-img-top" height="400px" width="400px">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="first">
+        <h5><u>Artistic Expression:</u></h5>
+        <p> Many contemporary calligraphers use their skills to create visually stunning and expressive artworks.
+            Calligraphy as an art form allows for the exploration of personal style, emotions, and creativity. The
+            aesthetic appeal of contemporary calligraphy often makes it suitable for display in galleries and
+            exhibitions.</p>
+        <h5>Custom Designs and Commissions:</h5>
+        <p>Individuals and businesses often commission contemporary calligraphers for custom designs. This can include
+            personalized wedding invitations, event signage, logo designs, and other unique projects that require a
+            creative and artistic touch.</p>
+        <h5>Typography in Design:</h5>
+        <p> Graphic designers often incorporate contemporary calligraphy into their projects to add a unique and
+            handcrafted element. Calligraphy can be used in branding, advertising, packaging, and various design
+            applications to convey a sense of elegance, authenticity, or creativity</p>
+        <h5>Social Media and Digital Platforms: </h5>
+        <p>Contemporary calligraphy has gained popularity on social media platforms such as Instagram, Pinterest, and
+            TikTok. Calligraphers share their work, tutorials, and process videos, contributing to a vibrant online
+            community. Social media also serves as a platform for artists to connect with clients and collaborators.</p>
+        <h5>Personal Stationery and Gifts: </h5>
+        <p> Individuals may use contemporary calligraphy to enhance personal stationery, such as greeting cards,
+            letters, or thank-you notes. Calligraphed items can also make thoughtful and unique gifts for special
+            occasions.</p>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark pt-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <img src="carousel/log.png" class="img-fluid">
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="fw-bold" style="color: #c07369";>Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="contact.html" class="text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> Site Map
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="gallery.html" class="text-white text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> Gallery
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#aboutus" class="text-white text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-light">
+                                <i class="fas fa-chevron-right me-1"></i> Queries
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="fw-bold mb-3" style="color: #c07369";>Contact Us</h3>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-light">
+                        <span class="fw-light">
+                            Aptech North Nazimabad.
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-light">
+                        <span class="fw-light">
+                            scratchynib@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-light">
+                        <span class="fw-light">
+                            03333564321
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="fw-bold mb-3" style="color: #c07369";>Follow Us</h3>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="https://www.facebook.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://pk.linkedin.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com"
+                                    class="text-white text-decoration-none text-light fs-4 me-4">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-4 fw-bold" style="color: #c07369";>
+            © 2024 copyright: nibscratchy.com
+        </div>
+        <!-- Copyright -->
+    </footer>
+    </div>
+
+
+    <!-- end -->
+    <!--Icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="script.js"></script>
+
+
+    <!--Javascript CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5h5.0.3h3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha5h5h5h585h5h5-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp5h5h5YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html

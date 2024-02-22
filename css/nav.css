@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,700&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;                    
+    font-family: 'Raleway', sans-serif;
+}
+
+.body.navbar
+{
+    
+margin: 0;
+padding: 0;
+background-color: gray;
+
+}
+.navbar-brand
+{
+    position: absolute;
+
+}
+.nav a 
+{
+    width: 100px;
+    display: flex;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+}
+.nav a :hover
+{
+  background: #c06154;  
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+.nav
+{
+   
+width: 100%;
+background: rgb(0, 0, 0);
+overflow: auto;
+}
+.navbar .navbar-nav .nav-item a {
+
+    padding: 15px;
+    color: rgb(0,0,0);
+}
+.navbar .navbar-nav .nav-but
+{
+    padding: 10px;
+
+}
+h5
+{
+    color: #fff;
+    font-weight: 400;
+}
+
+.dropdown-item:hover
+{
+    background-color: black;
+    color : white !important;
+}
+  
